@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function review_theme($existing, $type, $theme, $path)
+{
+  return [
+    "reviews-page"=>[
+      "variables"=>[
+        'form' => null,
+      ]
+    ]
+  ];
+}

@@ -1,0 +1,4 @@
+review_libraries:
+  css:
+    theme:
+      css/style.css: {}

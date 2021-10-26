@@ -1,0 +1,27 @@
+.main-container .highlighted .region-highlighted .alert {
+  background-color: #ff3d41;
+}
+.main-container .highlighted .region-highlighted .alert .close span {
+  color: black;
+}
+.main-container .highlighted .region-highlighted .alert p {
+  color: black;
+}
+.main-container .review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .review-form .form-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: center;
+}
+.main-container .review-form .form-item:nth-child(5), .main-container .review-form .form-item:last-child {
+  width: 300px;
+}
+.main-container .review-form #edit-actions #edit-submit {
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */

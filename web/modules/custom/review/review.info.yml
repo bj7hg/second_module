@@ -1,0 +1,6 @@
+name: review page
+description: This module creates a page with a list of reviews.
+type: module
+core: 8.x
+package: custom
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,7 @@
+reviews:
+  path: '/reviews'
+  defaults:
+    _controller: '\Drupal\review\Controller\ReviewController::content'
+    _title: 'Reviews'
+  requirements:
+    _permission: 'access content'

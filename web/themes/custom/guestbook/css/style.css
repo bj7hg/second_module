@@ -1,0 +1,17 @@
+#navbar {
+  background-color: black;
+}
+#navbar .menu a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#navbar .menu a.is-active {
+  background-color: transparent;
+}
+
+.js-quickedit-page-title {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
