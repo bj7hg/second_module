@@ -5,3 +5,21 @@ reviews:
     _title: 'Reviews'
   requirements:
     _permission: 'access content'
+
+edit_review:
+  path: '/reviews/edit/{id}'
+  defaults:
+    _form: '\Drupal\review\Form\EditReview'
+    _title: 'Edit Review'
+  requirements:
+    _role: 'administrator'
+    _permission: 'administrator'
+
+delete_review:
+  path: '/review/delete/{id}'
+  defaults:
+    _form: '\Drupal\review\Form\DeleteReview'
+    _title: 'Are you sure?'
+  requirements:
+    _role: 'administrator'
+    _permission: 'administrator'

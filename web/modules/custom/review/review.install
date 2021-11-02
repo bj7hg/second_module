@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @return mixed
+ * Implements hook_schema()
+ */
+function review_schema():array
+{
+  $schema['reviews'] = [
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'number' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'text' => [
+        'type' => 'varchar',
+        'length' => 1000,
+        'not null' => TRUE,
+      ],
+      'user' => [
+        'type' => 'int',
+        'length' => 20,
+        'not null' => FALSE,
+      ],
+      'image' => [
+        'type' => 'int',
+        'length' => 20,
+        'not null' => FALSE,
+      ],
+      'date' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+    ],
+    'primary key' => [
+      'id' ,
+    ],
+  ];
+
+  return $schema;
+}
+function review_uninstall() {
+  # Remove table
+  \Drupal::state()->delete('review.review');
+}

@@ -8,8 +8,23 @@ function review_theme($existing, $type, $theme, $path)
   return [
     "reviews-page"=>[
       "variables"=>[
-        'form' => null,
+        'form' => NULL,
+        'list' => NULL,
+      ],
+    ],
+    "list"=>[
+      "variables"=> [
+        'id' => NULL,
+        'name' => NULL,
+        'email' => NULL,
+        'number' => NULL,
+        'user' => NULL,
+        'text' => NULL,
+        'image' => NULL,
+        'date' => NULL,
+        'delete' => NULL,
+        'edit' => NULL,
       ]
-    ]
+    ],
   ];
 }
